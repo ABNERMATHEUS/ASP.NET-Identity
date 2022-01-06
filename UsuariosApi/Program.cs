@@ -21,6 +21,9 @@ namespace UsuariosApi
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+            .ConfigureAppConfiguration((app, config) =>
+            config.AddUserSecrets<Program>());
+        
     }
 }
