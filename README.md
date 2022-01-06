@@ -12,6 +12,14 @@ Link certificado👇
  [![NuGet](https://img.shields.io/static/v1?label=CERTIFICADO_ALURA&message=VERIFICADO&color=blue)](https://cursos.alura.com.br/certificate/89658cdb-ebf7-414b-8db4-55494ab6cde3)
  
  
-#### Para funcionar é necessário aplicar no appsettings.Development.json um e-mail e senha válido do tipo gmail.
+#### Para funcionar é necessário aplicar 
+Inicialmente, acesse o diretório do projeto UsuariosApi através do seu terminal e execute o comando ``dotnet user-secrets init``
 
- ![image](https://user-images.githubusercontent.com/49282334/148424537-903826b2-2a28-48a8-b69d-76d656d41617.png)
+Depois
+
+`````
+dotnet user-secrets set “EmailSettings:From” “<SEU-EMAIL>”
+dotnet user-secrets set “EmailSettings:SmtpServer” “smtp.gmail.com”
+dotnet user-secrets set “EmailSettings:Port” 465
+dotnet user-secrets set “EmailSettings:Port” “<SUA-SENHA>”
+````
