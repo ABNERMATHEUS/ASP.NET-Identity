@@ -21,5 +21,5 @@ Depois
 dotnet user-secrets set “EmailSettings:From” “<SEU-EMAIL>”
 dotnet user-secrets set “EmailSettings:SmtpServer” “smtp.gmail.com”
 dotnet user-secrets set “EmailSettings:Port” 465
-dotnet user-secrets set “EmailSettings:Port” “<SUA-SENHA>”
+dotnet user-secrets set “EmailSettings:Password” “<SUA-SENHA>”
 ````
