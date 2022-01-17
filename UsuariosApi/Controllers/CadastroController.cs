@@ -15,7 +15,7 @@ namespace UsuariosApi.Controllers
 
         public CadastroController(CadastroService cadastroService)
         {
-            _cadastroService = cadastroService;
+            _cadastroService = cadastroService;            
         }
 
         [HttpPost]
