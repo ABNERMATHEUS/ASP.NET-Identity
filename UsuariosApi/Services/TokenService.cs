@@ -10,7 +10,7 @@ namespace UsuariosApi.Services
 {
     public class TokenService
     {
-        public Token CreateToken(IdentityUser<int> usuario)
+        public Token CreateToken(IdentityUser<int> usuario, string role)
         {
 
             //aplicando as claims que eu quero guardar
@@ -18,6 +18,7 @@ namespace UsuariosApi.Services
             {
                 new Claim("username",usuario.UserName),
                 new Claim("id",usuario.Id.ToString()),
+                new Claim(ClaimTypes.Role,role)
             };
 
             //criando a chave e credenciais
